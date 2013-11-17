@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+	background-color: #FCF1BF;
+	border-bottom: solid 8px #dcd8d8;
+	border-top: solid 8px #dcd8d8;
+	margin: 0 12px;
+	padding: 1px 0 10px 0;
+	display:block;
+	height: auto;
+}
+	header #doNotCall {
+		position:absolute; 
+		top:48px; 
+		width: 100%;
+		left: 0;
+	}
+	header .downloadLink, header .downloadLink a {
+		top: 42px;
+	}
+
+#container {
+	border:1px solid #ccc;
+}
