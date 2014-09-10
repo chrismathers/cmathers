@@ -9,7 +9,7 @@ html {
 
 body {
   text-align: center;
-  background: #DDD;
+  background: #ccc;
   margin: 0; }
 
 a {
@@ -84,12 +84,13 @@ ol, li {
   visibility: hidden; }
 
 #container {
+  background-color: #ddd;
   margin: 18px auto;
   max-width: 960px;
   position: relative;
-  -moz-box-shadow: 0px 12px 17px 11px #888888;
-  -webkit-box-shadow: 0px 12px 17px 11px #888888;
-  box-shadow: 0px 12px 17px 11px #888888;
+  -moz-box-shadow: 0px 1px 5px 1px #888888;
+  -webkit-box-shadow: 0px 1px 5px 1px #888888;
+  box-shadow: 0px 1px 5px 1px #888888;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -113,14 +114,31 @@ header {
       font-weight: bold;
       font-size: 1em; }
   header .downloadLink {
-    bottom: 16px;
+    bottom: 33px;
     position: absolute;
     right: 20px;
     text-align: right;
-    width: 140px;
-    z-index: 2; }
+    width: auto;
+    z-index: 2;
+    border-radius: 8px;
+    border: 1px dashed #999;
+    background-color: antiquewhite;
+    padding: 6px;
+    color: brown; }
+    header .downloadLink span {
+      display: inline-block; }
     header .downloadLink a {
-      color: maroon; }
+      color: maroon;
+      width: 29px;
+      height: 29px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 2px;
+      border-radius: 3px; }
+      header .downloadLink a.word {
+        background: url(../images/word.svg) no-repeat 0 0; }
+      header .downloadLink a.pdf {
+        background: url(../images/pdf.svg) no-repeat 0 0; }
     @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 480px)
