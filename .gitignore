@@ -4,7 +4,6 @@
 *.LOG
 /WS_FTP.LOG
 .idea
-
 .idea/*
 .sass-cache/
 xindex.php
