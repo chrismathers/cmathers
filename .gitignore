@@ -3,3 +3,5 @@
 /css/.sass-cache/0b2e5849e7ff454fe6a7c749930ae040df43a224
 *.LOG
 /WS_FTP.LOG
+.idea
+
