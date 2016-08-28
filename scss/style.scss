@@ -99,23 +99,22 @@ ol, li {
   -moz-box-shadow: 0px 1px 5px 1px #888888;
   -webkit-box-shadow: 0px 1px 5px 1px #888888;
   box-shadow: 0px 1px 5px 1px #888888;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  border-radius: 0;
   padding: 1px 0; }
 
 header {
   background-color: #FCF1BF;
-  /*border-bottom: solid 8px #dcd8d8;
-  border-top: solid 8px #dcd8d8;*/
+  text-align: center;
   margin: 12px;
   padding: 1px 0 10px 0;
   display: block;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  border-radius: 0;
   height: auto;
   position: relative;
+
+  p {
+    text-align: center;
+  }
 
   h2 {
     font-size: 0.75em;
@@ -188,6 +187,9 @@ header {
 
   .emails {
     padding: 6px 0 6px 0;
+    p {
+      text-align: center;
+    }
   }
 }
 
@@ -199,9 +201,7 @@ article {
   margin: 0 12px 14px;
   padding: 6px 24px 12px 18px;
   width: auto;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  border-radius: 0;
   display: block; }
 
 .linkSet a {
