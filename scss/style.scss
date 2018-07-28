@@ -18,13 +18,14 @@
   font-style: normal; }
 
 html {
-  font: 62.5% Arial, Helvetica, sans-serif;
   height: 100%;
-
+  -webkit-text-size-adjust:none;
+  font: 73% Arial, Helvetica, sans-serif;
   @media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 480px) {
-    //font-size: 120%;
+  and (max-device-width: 1100px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: calc(73% + .9vw);
   }
 }
 
@@ -48,6 +49,12 @@ h1{
   font-size: 5.2rem;
   letter-spacing: 0.2rem;
   padding: 0 2rem;
+  @media only screen
+  and (max-device-width: 1100px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    font-size: 3.5rem;
+  }
 }
 
 h2 {
@@ -68,9 +75,6 @@ h3 {
   margin-bottom: 5rem;
   padding: 0;
   color: black;
-  @media only screen and (max-width: 400px) {
-    font-size: 3em;
-  }
 }
 
 h4 {
@@ -81,12 +85,11 @@ h4 {
   }
 }
 
-span, a, p {
-  font: 1.4rem/2rem Arial, Helvetica, sans-serif;
-  @media only screen and (max-width: 400px) {
-    font-size: 1.4rem;
-  }
+span, a, p, li {
+  font: 1.7rem/2rem Arial, Helvetica, sans-serif;
 }
+
+
 p {
   margin: 0 0 .7em 0;
 }
@@ -99,7 +102,6 @@ ul, li {
 }
 
 li {
-  font-size: 1.6rem;
   list-style: none;
   display: table-row;
   margin-bottom: 2em;
@@ -111,9 +113,6 @@ li {
     text-align: right;
     padding-right: .6rem;
     padding-bottom: 2.5rem;
-  }
-  @media only screen and (max-width: 400px) {
-    font-size: 1.4rem;
   }
 }
 
@@ -141,7 +140,7 @@ section {
 
   &.mid-size {
     text-align: center;
-    padding: 3em 24%;
+    padding: 3em 20%;
     h3:not(:first-child) {
       margin-top: 1.4em;
     }
@@ -157,15 +156,12 @@ section {
 
   .prev {
     display: flex;
-    span, p {
-      font-size: 1.8rem;
-    }
     > span {
       min-width: 150px;
     }
-    @media only screen and (max-width: 400px) {
-      span, p {
-        font-size: 1.4rem;
+    @media only screen and (min-width: 812px) and (max-width: 1200px) {
+      > span {
+        min-width: 240px;
       }
     }
   }
@@ -188,6 +184,7 @@ section:nth-child(2) {
 }
 
 section:nth-child(3) {
+  background-color: #48A1E7;
   background-color: #48A1E7;
   color: white;
   h3 {
@@ -231,7 +228,6 @@ section:nth-child(6) {
     display: inline-block;
   }
   a {
-    color: maroon;
     width: 29px;
     height: 29px;
     display: inline-block;
@@ -257,12 +253,6 @@ header {
   display: flex;
   flex-direction: column;
 
-  h1 {
-    @media only screen and (max-width: 680px) {
-      font-size: 2em;
-    }
-  }
-
   h2 {
     padding: 4rem 0 0 0;
   }
@@ -270,7 +260,7 @@ header {
   .header-group {
     .downloadLinks {
       display: none;
-      @media only screen and (max-width: 1160px) {
+      @media only screen and (max-width: 1225px) {
         display: block;
         position: static;
         text-align: center;
@@ -293,7 +283,7 @@ header {
       justify-content: center;
     }
 
-    @media only screen and (max-width: 1160px) {
+    @media only screen and (max-width: 1225px) {
       display: none;
     }
   }
